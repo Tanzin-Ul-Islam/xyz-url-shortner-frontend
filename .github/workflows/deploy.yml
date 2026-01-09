@@ -51,6 +51,6 @@ jobs:
             pnpm run build
 
             echo "♻ Restarting PM2"
-            pm2 restart my-next-app
+            pm2 restart ecosystem.config.js
 
             echo "✅ Deployment finished successfully"
