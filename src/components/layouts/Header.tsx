@@ -1,15 +1,16 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#features", label: "Features" },
-    { href: "#stats", label: "Stats" },
-    { href: "#about", label: "About" },
+    { href: "/", label: "Home" },
+    { href: "/features", label: "Features" },
+    { href: "/stats", label: "Stats" },
+    { href: "/about", label: "About" },
   ];
 
   return (
@@ -41,14 +42,14 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 lg:gap-10">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-slate-700 hover:text-sky-600 font-medium text-base transition-colors relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-600 transition-all group-hover:w-full"></span>
-              </a>
+              </Link>
             ))}
           </div>
 
