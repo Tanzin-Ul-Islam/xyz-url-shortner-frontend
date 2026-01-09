@@ -17,7 +17,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We're on a mission to make the internet more accessible, one shortened link at a time.
+            We are on a mission to make the internet more accessible, one shortened link at a time.
             Our platform transforms long, complex URLs into clean, shareable links that work everywhere.
           </p>
         </div>

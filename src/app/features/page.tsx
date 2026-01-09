@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Features() {
@@ -66,12 +67,12 @@ export default function Features() {
 
           {/* Call to Action */}
           <div className="pt-8">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               <span>← Back to Home</span>
-            </a>
+            </Link>
           </div>
 
           {/* Footer Note */}
