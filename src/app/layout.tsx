@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Transform Your Links - Fast & Free URL Shortener",
+  title: "Transform Your Links - Fast & Free URL Shortener!",
   description:
     "Shorten long URLs into concise, shareable links instantly. Free, secure, and easy to use URL shortening service.",
   icons: {
