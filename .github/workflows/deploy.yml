@@ -35,6 +35,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             set -e
+            export CI=true
             cd ${{ secrets.APP_PATH }}
             git pull origin main
             pnpm install --frozen-lockfile
