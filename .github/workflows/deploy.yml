@@ -17,7 +17,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -41,3 +40,4 @@ jobs:
             pnpm install --frozen-lockfile
             pnpm build
             pm2 reload ecosystem.config.js
+            echo "✅ Deployment completed successfully"
